@@ -1,0 +1,32 @@
+To do:
+sort indecies
+sort division
+^ auto = ^(
+-- = +
+use the last entered number as it is - make it so it asumes the last number entered is as it is
+5( = 5*(
+change everything to doubles
+maybe stick - inside doubles
+
+
+
+Tests:
+(5+5(9+61)+45)4(6+6)4
+5+5+5(5+5*(5+7))
+(5+5)+(5)
+5--5
+
+Done:
+
+
+Thoughts:
+22.08.20 - so ints can be negative so bascially need to check if a negative before a number to save the number as a negative 
+so now instead of having two list i only need one, one list of strings
+so biuld this string list with bits is the first job
+
+21.08.20:
+            //use arrays to calculate
+            //(_numbers, _simOpps) = Calculation('(', _numbers, _simOpps) //needs to do all below for within)
+            // to use brackets would be applying this order to inbetween brackets
+            //for brakets inside brackets it needs a serach for ) ting, 
+            // then can send it throug but need to how to correct 
