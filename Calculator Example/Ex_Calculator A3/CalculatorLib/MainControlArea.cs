@@ -20,13 +20,14 @@ namespace CalculatorLib
         public string[] Store(string equation) 
         {
             List<string> _equationList = new List<string>();
+            _equationList.Add("(");
             string current = equation;
             string result = "";
             string numBuilder = "";            
 
             //build List
             foreach (char i in equation)
-                if (Char.IsDigit(i) == true)
+                if (Char.IsDigit(i) == true) // || i == '.' to make it work with floating numbers
                 {
                     if (numBuilder != "")
                     {
@@ -34,17 +35,22 @@ namespace CalculatorLib
                     }
                     numBuilder += i;
                     _equationList.Add(numBuilder.ToString());
-                }
-                
+                }                
                 else if (i == '-' || i == '+' || i == '/' || i == '*' || i == '(' || i == ')' || i == '^' )
                 {
                     numBuilder = "";
                     _equationList.Add(i.ToString());
+                    //if (i == '^')
+                    //{
+                    //    current += "()" //make it so ^()expects bractets
+                    //}
+
                 }
                 else if (i == '=')
                 {
                     break;
                 }
+            _equationList.Add(")");
             // clean up List/equation (-- = +)
             int x = -2;
             for (int i = 0; i < _equationList.Count; i++)
@@ -65,11 +71,11 @@ namespace CalculatorLib
             {
                 if (_equationList[posI] == ")")
                 {
-                    for (int Ipos = posI; Ipos >= 0 ; Ipos--)
+                    for (int Ipos = posI-1; Ipos >= 0 ; Ipos--)
                     {
                         if (_equationList[Ipos] == ")")
                         {
-                            continue;
+                            break;
                         }
                         
                         else if (_equationList[Ipos] == "(")
@@ -98,7 +104,8 @@ namespace CalculatorLib
                                 _equationList.RemoveAt(posI - i);
                             }
 
-                            posI = 0; // break here although it also makes it good, probs needs and if function, can probs make a rule about it                      
+                            posI = 0; // break here although it also makes it good, probs needs and if function, can probs make a rule about it 
+                            break;
                         }
                     }
                 }                       

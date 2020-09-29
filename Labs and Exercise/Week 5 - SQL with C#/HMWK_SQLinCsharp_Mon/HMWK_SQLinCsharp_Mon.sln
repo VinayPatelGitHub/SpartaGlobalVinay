@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMWK_SQLinCsharp_Mon", "HMWK_SQLinCsharp_Mon\HMWK_SQLinCsharp_Mon.csproj", "{2D97E0EC-A766-481C-BF19-FC8AE7E6F200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMWK_Business", "HMWK_Business\HMWK_Business.csproj", "{1A76F2E9-B88A-495C-BEE0-F23D5FC62BDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D97E0EC-A766-481C-BF19-FC8AE7E6F200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D97E0EC-A766-481C-BF19-FC8AE7E6F200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D97E0EC-A766-481C-BF19-FC8AE7E6F200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D97E0EC-A766-481C-BF19-FC8AE7E6F200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A76F2E9-B88A-495C-BEE0-F23D5FC62BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A76F2E9-B88A-495C-BEE0-F23D5FC62BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A76F2E9-B88A-495C-BEE0-F23D5FC62BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A76F2E9-B88A-495C-BEE0-F23D5FC62BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B811169-1748-4F66-A9C7-5A2996409427}
+	EndGlobalSection
+EndGlobal

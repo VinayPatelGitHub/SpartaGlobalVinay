@@ -1,13 +1,11 @@
 To do:
-sort indecies
-sort division
+sort indecies method
 ^ auto = ^(
--- = +
-use the last entered number as it is - make it so it asumes the last number entered is as it is
+sort division method
 5( = 5*(
-change everything to doubles
-maybe stick - inside doubles
-
+change everything to doubles - the challenge will be . as a number, although can just do digit and point lol
+add a sqrt button = ^(0.5), might have to use different brackets??
+"-x" = to.String(int x * (-1))
 
 
 Tests:
@@ -17,7 +15,8 @@ Tests:
 5--5
 
 Done:
-
+-- = +
+use the last entered number as it is - make it so it asumes the last number entered is as it is
 
 Thoughts:
 22.08.20 - so ints can be negative so bascially need to check if a negative before a number to save the number as a negative 

@@ -1,0 +1,22 @@
+{
+   "Trainee":[
+      {
+         "Name":"Vinay",
+         "Age":24,
+         "Location":"Walsall",
+         "SpartaConsultant":true
+      },
+      {
+         "Name":"Fazal",
+         "Age":15,
+         "Location":"not-Walsall",
+         "SpartaConsultant":true
+      },
+      {
+         "Name":"Diogo",
+         "Age":23,
+         "Location":"London",
+         "SpartaConsultant":true
+      }
+   ]
+}
